@@ -1,0 +1,23 @@
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">reference</th>
+        <th scope="col">titre</th>
+        <th scope="col">entreprise</th>
+        <th scope="col">etat</th>
+        <th scope="col">action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emploi of listeEmploi">
+        <th scope="row">{{emploi.reference}}</th>
+        <td>{{emploi.titre}}</td>
+        <td>{{emploi.entreprise}}</td>
+        <td>{{emploi.etat}}</td>
+        <td><button class="btn btn-primary" [disabled]="emploi.etat==false">Postuler</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="bilanCalculer()">Bilan</button>
+{{bilan}}

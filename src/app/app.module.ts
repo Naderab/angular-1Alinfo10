@@ -9,6 +9,9 @@ import { ProductsComponent } from './products/products.component';
 import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
 import { NotFoundComponent } from './models/not-found/not-found.component';
 import { DetailsProductComponent } from './models/details-product/details-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
+import { TemplateFormComponent } from './template-form/template-form.component';
 
  
 @NgModule({
@@ -19,11 +22,14 @@ import { DetailsProductComponent } from './models/details-product/details-produc
     ProductsComponent,
     OffresEmploiComponent,
     NotFoundComponent,
-    DetailsProductComponent
+    DetailsProductComponent,
+    AddProductComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

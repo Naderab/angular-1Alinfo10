@@ -12,7 +12,7 @@ import { DetailsProductComponent } from './models/details-product/details-produc
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
 import { TemplateFormComponent } from './template-form/template-form.component';
-
+import { HttpClientModule } from '@angular/common/http';
  
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { TemplateFormComponent } from './template-form/template-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

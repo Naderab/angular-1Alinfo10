@@ -9,6 +9,8 @@
       <p class="card-text">Quantity : {{p.quantity}}</p>
       <p class="card-text">Likes : {{p.like}}</p>
         <button class="btn btn-primary" (click)="buy(p)" [disabled]="p.quantity == 0">Buy</button>
+        <button class="btn btn-primary" (click)="delete(p.id)">Delete</button>
+
         <button class="btn btn-primary" [routerLink]="['/product',p.id]" >Details</button>
 
     </div>
